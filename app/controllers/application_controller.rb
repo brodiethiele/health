@@ -22,4 +22,17 @@ class ApplicationController < Sinatra::Base
   get '/stressed'do
     erb :stressed
   end
+  
+  get '/distracted'do
+    erb :distracted
+  end
+  
+  get '/tired'do
+    erb :tired
+  end
+  
+  get 'calm'do
+    erb :calm
+  end
+  
 end
