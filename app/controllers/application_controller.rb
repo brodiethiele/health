@@ -10,4 +10,16 @@ class ApplicationController < Sinatra::Base
   get '/' do
     return erb :index
   end
+  
+  get '/sad'do
+    erb :sad
+  end
+  
+  get '/happy'do
+    erb :happy
+  end
+  
+  get '/stressed'do
+    erb :stressed
+    do
 end
