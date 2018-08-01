@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     erb :tired
   end
   
-  get 'calm'do
+  get '/calm'do
     erb :calm
   end
   
