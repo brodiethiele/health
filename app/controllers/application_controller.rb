@@ -21,5 +21,5 @@ class ApplicationController < Sinatra::Base
   
   get '/stressed'do
     erb :stressed
-    do
+  end
 end
