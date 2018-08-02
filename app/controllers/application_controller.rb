@@ -55,14 +55,25 @@ class ApplicationController < Sinatra::Base
     return erb :tired 
   end
   get '/hug'do
+    erb :hug
+  end
+  post '/hug' do
     return erb :hug
   end
+  post '/rant_form'do
+    @name=params[:name]
+  @rant=params[:rant]
+  "#{@name}:#{@rant}"
+  erb :sad_form
+end
   get '/rant_form'do
   erb :sad_form
 end
-  post '/rant_form'do
-    return erb :sad_form
-    @name=params[:name]
-  @rant=params[:rant]
+post '/hotlines' do
+   return erb :hotlines
   end
+
+post '/school_stress' do
+   return erb :school_stress
+ end  
 end
