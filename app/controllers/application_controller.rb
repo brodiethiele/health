@@ -44,6 +44,19 @@ class ApplicationController < Sinatra::Base
   post '/happy' do 
     return erb :happy
   end
+  post '/sad' do
+    return erb :sad
+  end
+  post '/calm' do
+    return erb :calm
+  end
+  post '/distracted' do
+    return erb :distracted
+  end
+  post 'tired' do
+    return erb :tired 
+  end
+
   
   
 end
