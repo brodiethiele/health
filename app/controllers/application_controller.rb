@@ -65,4 +65,8 @@ end
     @name=params[:name]
   @rant=params[:rant]
   end
+  
+post '/school_stress' do 
+    return erb :school_stress
+  end
 end
