@@ -53,7 +53,7 @@ class ApplicationController < Sinatra::Base
   post '/distracted' do
     return erb :distracted
   end
-  post 'tired' do
+  post '/tired' do
     return erb :tired 
   end
 
