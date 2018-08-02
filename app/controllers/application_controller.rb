@@ -9,29 +9,29 @@ class ApplicationController < Sinatra::Base
     return erb :index
   end
   
-  # get '/sad'do
-  #   erb :sad
-  # end
+  get '/sad'do
+    erb :sad
+  end
   
-  # get '/happy'do
-  #   erb :happy
-  # end
+  get '/happy'do
+    erb :happy
+  end
   
-  # get '/stressed'do
-  #   erb :stressed
-  # end
+  get '/stressed'do
+    erb :stressed
+  end
   
-  # get '/distracted'do
-  #   erb :distracted
-  # end
+  get '/distracted'do
+    erb :distracted
+  end
   
-  # get '/tired'do
-  #   erb :tired
-  # end
+  get '/tired'do
+    erb :tired
+  end
   
-  # get '/calm'do
-  #   erb :calm
-  # end
+  get '/calm'do
+    erb :calm
+  end
   
   get '/hotlines' do
     erb :hotlines
