@@ -38,5 +38,9 @@ class ApplicationController < Sinatra::Base
   get '/hotlines' do
     erb :hotlines
   end
+  post '/stressed' do
+    return erb :stressed
+  end
+  
   
 end
