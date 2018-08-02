@@ -1,39 +1,37 @@
 require './config/environment'
 require './app/models/sample_model'
-
 class ApplicationController < Sinatra::Base
   configure do
     set :public_folder, 'public'
     set :views, 'app/views'
   end
-
-  get '/' do
-    return erb :index
-  end
+  # get '/' do
+  #   return erb :index
+  # end
   
-  get '/sad'do
-    erb :sad
-  end
+  # get '/sad'do
+  #   erb :sad
+  # end
   
-  get '/happy'do
-    erb :happy
-  end
+  # get '/happy'do
+  #   erb :happy
+  # end
   
-  get '/stressed'do
-    erb :stressed
-  end
+  # get '/stressed'do
+  #   erb :stressed
+  # end
   
-  get '/distracted'do
-    erb :distracted
-  end
+  # get '/distracted'do
+  #   erb :distracted
+  # end
   
-  get '/tired'do
-    erb :tired
-  end
+  # get '/tired'do
+  #   erb :tired
+  # end
   
-  get '/calm'do
-    erb :calm
-  end
+  # get '/calm'do
+  #   erb :calm
+  # end
   
   get '/hotlines' do
     erb :hotlines
@@ -53,10 +51,15 @@ class ApplicationController < Sinatra::Base
   post '/distracted' do
     return erb :distracted
   end
-  post 'tired' do
+  post '/tired' do
     return erb :tired 
   end
-
+  get '/hug'do
+    return erb :hug
+  end
   
+  get '/rant_form'do
+    return erb :rant_form
+  end
   
 end
