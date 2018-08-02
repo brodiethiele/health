@@ -35,4 +35,8 @@ class ApplicationController < Sinatra::Base
     erb :calm
   end
   
+  get '/hotlines' do
+    erb :hotlines
+  end
+  
 end
