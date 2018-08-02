@@ -5,9 +5,9 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
   end
-  # get '/' do
-  #   return erb :index
-  # end
+  get '/' do
+    return erb :index
+  end
   
   # get '/sad'do
   #   erb :sad
@@ -57,9 +57,12 @@ class ApplicationController < Sinatra::Base
   get '/hug'do
     return erb :hug
   end
-  
   get '/rant_form'do
-    return erb :rant_form
+  erb :sad_form
+end
+  post '/rant_form'do
+    return erb :sad_form
+    @name=params[:name]
+  @rant=params[:rant]
   end
-  
 end
