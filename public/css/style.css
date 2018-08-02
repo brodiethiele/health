@@ -2,23 +2,25 @@ body {
   background-image: url("http://cdn.playbuzz.com/cdn/1763c248-c050-4ed4-a306-0a03b6858650/aaa041ca-0e5f-461a-b7b0-669959137adb.gif");
 }
 h1 {
-  font-family:cursive;
+  font-family: 'Amatic SC', cursive;
   color:white;
+  font-size:50px;
 }
 h2 {
-  font-family:cursive;
+font-family: 'Amatic SC', cursive;
   color:white;
 }
 h3 {
-  font-family:cursive;
+  font-family: 'Amatic SC', cursive;
   color:white;
 }
 p {
-  font-family:cursive;
+  font-family: 'Amatic SC', cursive;
   color:white;
 }
-li { font-family:cursive;
+li { font-family: 'Amatic SC', cursive;
   color:white; 
+  font-size: 25px;
 }
 button { 
   height:100px;
@@ -28,7 +30,7 @@ button {
   display: inline-block;
   padding: 15px 32px;
   border-radius:50%;
-  font-size:13px;
-  font-family:cursive;
+  font-size:20px;
+  font-family: 'Amatic SC', cursive;
   border:black;
 }
