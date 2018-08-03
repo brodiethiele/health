@@ -76,4 +76,7 @@ post '/hotlines' do
 post '/school_stress' do
    return erb :school_stress
  end  
+ post '/' do
+   return erb :index
+ end
 end
