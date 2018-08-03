@@ -79,4 +79,7 @@ post '/school_stress' do
  post '/' do
    return erb :index
  end
+ post '/quote' do
+   return erb :quote
+ end
 end
