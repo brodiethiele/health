@@ -23,8 +23,8 @@ li { font-family: 'Amatic SC', cursive;
   font-size: 25px;
 }
 button { 
-  height:100px;
-  width:100px;
+  height:150px;
+  width:150px;
   background-color:black;
   color:white;
   display: inline-block;
